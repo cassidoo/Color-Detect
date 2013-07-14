@@ -1,0 +1,44 @@
+body {
+	font-family: 'Arial', sans-serif;
+	background-image: url('gridme.png');
+}
+
+h1 {
+	text-align: center;
+	text-shadow: 0px 1px 3px black;
+	font-size: 80px;
+}
+
+p
+{
+	text-shadow: 0px 1px 3px #999999;
+}
+
+div
+{
+	font-size: 25px;
+	text-shadow: 0px 1px 3px #999999;
+}
+
+
+
+.colorResults {
+
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px black;
+
+}
+
+.thumb {
+	height: 250px;
+	/*border: 1px solid #000;*/
+	margin: 10px 10px 10px 10px;
+	-moz-box-shadow: 0px 2px 8px 0px #555;
+	-webkit-box-shadow: 0px 2px 8px 0px #555;
+	box-shadow: 0px 2px 8px 0px #555;
+}
