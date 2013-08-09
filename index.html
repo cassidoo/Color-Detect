@@ -11,32 +11,54 @@
 		<h1>[Color Detector]</h1>
 
 		<!--Here is where the user uploads-->
-		<div>Upload as many logos as you would like.</div> <br>
-		
+		<div>
+			Upload as many logos as you would like.
+		</div>
+		<br>
+
 		<input type="file" id="files" name="files[]" multiple />
 		<br>
 		<output id="list"></output>
-		
-		
+
 		<!--This script has to be called after the file input is initialized-->
 		<script>
 			document.getElementById('files').addEventListener('change', handleFileSelect, false);
 		</script>
 
 		<!--This is where the image will technically go when we're taking color information from it (standard HTML5)-->
-		<canvas id="canvas" style="display: none;" width="250" height="250"></canvas>
-		
+		<canvas id="canvas" style="display: none;" width="150" height="150"></canvas>
+
 		<!--This is where the colors will show up-->
 		<div id="theme">
-			<p id="message">
-			</p>
-			
-			<!--Something curious baout this is if you keep clicking on the image, 
-				you'll get the same colors, but sometimes in a different order.-->
-			
+			<p id="message"></p>
+
+			<!--Something curious about this is if you keep clicking on the image,
+			you'll get the same colors, but sometimes in a different order.-->
+			<div id="pickedColor" class="colorResults"></div>
 			<div id="color1" class="colorResults"></div>
 			<div id="color2" class="colorResults"></div>
 			<div id="color3" class="colorResults"></div>
+
+		</div>
+		<br>
+		<br>
+		<div id="scheme">
+			<p>
+				Generated Mono Color Scheme
+			</p>
+			<div class="swatches">
+			<div class="swatch" id="s0"></div>
+			<div class="swatch" id="s1"></div>
+			<div class="swatch" id="s2"></div>
+			<div class="swatch" id="s3"></div>
+			<div class="swatch" id="s4"></div>
+
+			<div class="swatch" id="s5"></div>
+			<div class="swatch" id="s6"></div>
+			<div class="swatch" id="s7"></div>
+			<div class="swatch" id="s8"></div>
+			<div class="swatch" id="s9"></div>
+			</div>
 		</div>
 	</body>
 </html>
