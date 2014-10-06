@@ -6,4 +6,4 @@ I used Charles Leifer's technique (http://charlesleifer.com/blog/using-python-an
 Future work will probably include more contrast-based coloring and more image support.
 Right now the browser occasionally crashes too, I think there's an infinite loop not being closed.  But it usually works and that's what matters.
 
-Check out a demo here: http://cassidoo.co/assets/colordetect/index.html
+![Screenshot](https://raw.githubusercontent.com/cassidoo/Color-Detect/master/ColorDetectScreenshot.png)
